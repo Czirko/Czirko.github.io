@@ -34,10 +34,11 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-
+    if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=4111424679');
-
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2365889529');
+      });
+    }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
